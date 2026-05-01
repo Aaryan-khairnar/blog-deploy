@@ -17,15 +17,15 @@ The main focus of this project is not the blog page itself, but the infrastructu
 
 ## Preview
 
-Screenshots:
-
 Grafana Dashboard:  
 
 ![Grafana Dashboard](screenshots/7.png)
 
 Public Blog (Accessed through Cloudflare tunnel link):  
 
-![Public Blog](screenshots/3.png)
+![Public Blog](screenshots/3.png)  
+
+[Note]: The cloudflare tunnel link is no longer accessible and running.
 
 ---
 
