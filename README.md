@@ -406,6 +406,5 @@ docker compose down -v
 ---
 
 ## License
-
-This project is licensed under the terms of the included license file.
+MIT License
 
