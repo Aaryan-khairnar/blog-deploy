@@ -1,4 +1,3 @@
-````markdown
 # Homelab Blog Deployment
 
 A small homelab deployment project that serves a static blog from a headless Ubuntu server using **Nginx**, exposes it temporarily through **Cloudflare Quick Tunnel**, and monitors it using **Prometheus + Grafana**.
@@ -18,17 +17,11 @@ The main focus of this project is not the blog page itself, but the infrastructu
 
 ## Demo
 
-Add your demo video here:
-
-```text
+`
 Demo video: <link here>
-````
 
-Screenshots are stored in:
 
-```text
-screenshots/
-```
+Screenshots:
 
 ---
 
