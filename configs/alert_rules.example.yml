@@ -1,0 +1,30 @@
+groups:
+  - name: blog_alerts
+    rules:
+
+      - alert: NginxExporterDown
+        expr: up{job="nginx"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Nginx exporter is unreachable"
+          description: "Prometheus cannot scrape the Nginx exporter. The blog may be down."
+
+      - alert: HighRequestRate
+        expr: rate(nginx_http_requests_total[1m]) > 50
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Unusually high request rate"
+          description: "Request rate has exceeded 50 req/s for 2 minutes. Could be a bot or scraper."
+
+      - alert: HighActiveConnections
+        expr: nginx_connections_active > 100
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High number of active connections"
+          description: "More than 100 connections are active. This is unusual for a static blog."

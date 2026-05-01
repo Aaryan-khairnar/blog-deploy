@@ -1,0 +1,17 @@
+# This file is only for the optional named Cloudflare Tunnel setup.
+# The current demo uses a temporary Quick Tunnel:
+#
+#   cloudflared tunnel --url http://localhost:8080
+#
+# Quick Tunnels do not require a config file.
+
+tunnel: <TUNNEL-ID-OR-NAME>
+credentials-file: /path/to/<TUNNEL-ID>.json
+
+ingress:
+  - hostname: blog.example.com
+    service: http://localhost:8080
+
+  - service: http_status:404
+
+# store at /etc/cloudflared/config.yml 
