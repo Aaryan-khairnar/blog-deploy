@@ -15,13 +15,17 @@ The main focus of this project is not the blog page itself, but the infrastructu
 
 ---
 
-## Demo
-
-`
-Demo video: <link here>
-
+## Preview
 
 Screenshots:
+
+Grafana Dashboard:  
+
+![Grafana Dashboard](screenshots/7.png)
+
+Public Blog (Accessed through Cloudflare tunnel link):  
+
+![Public Blog](screenshots/3.png)
 
 ---
 
@@ -342,6 +346,35 @@ docker compose down -v
 * Grafana is bound to `127.0.0.1:3000`.
 * Grafana signups and anonymous access are disabled.
 * Internal dashboards are accessed through SSH port forwarding, not public exposure.
+
+---
+
+## Screenshots
+
+### Docker Compose monitoring stack
+
+![Docker Compose monitoring stack running](screenshots/1.png)
+
+### Cloudflare Quick Tunnel
+
+![Temporary Cloudflare Tunnel exposing the blog](screenshots/2.png)
+
+### Public blog through TryCloudflare
+
+![Blog reachable through TryCloudflare URL](screenshots/3.png)
+
+### Public `/stub_status` blocked
+
+![Public stub_status returns 404](screenshots/8.png)
+
+### Prometheus targets
+
+![Prometheus successfully scraping Nginx exporter](screenshots/4.png)
+
+### Grafana dashboard
+
+![Grafana dashboard visualizing Nginx metrics](screenshots/6.png)
+![Grafana dashboard visualizing Nginx metrics](screenshots/7.png)
 
 ---
 
