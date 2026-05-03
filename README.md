@@ -11,7 +11,6 @@ The main focus of this project is not the blog page itself, but the infrastructu
 - local-only monitoring stack
 - Prometheus metrics collection
 - Grafana dashboard visualization
-- SSH forwarding for accessing dashboards on a headless server
 
 ---
 
